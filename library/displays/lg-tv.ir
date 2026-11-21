@@ -1,0 +1,61 @@
+Filetype: IR signals file
+Version: 1
+# Brand: LG
+# Models: TVs and many commercial displays using the LG NEC code set (address 04)
+# Source: LG's published NEC codes (20DFxxxx), decoded to Flipper's NEC form
+# Tested: no
+# Notes: Power_on and Power_off are discrete codes.
+#
+name: Power
+type: parsed
+protocol: NEC
+address: 04 00 00 00
+command: 08 00 00 00
+#
+name: Power_on
+type: parsed
+protocol: NEC
+address: 04 00 00 00
+command: C4 00 00 00
+#
+name: Power_off
+type: parsed
+protocol: NEC
+address: 04 00 00 00
+command: C5 00 00 00
+#
+name: Vol_up
+type: parsed
+protocol: NEC
+address: 04 00 00 00
+command: 02 00 00 00
+#
+name: Vol_dn
+type: parsed
+protocol: NEC
+address: 04 00 00 00
+command: 03 00 00 00
+#
+name: Mute
+type: parsed
+protocol: NEC
+address: 04 00 00 00
+command: 09 00 00 00
+#
+name: Ch_next
+type: parsed
+protocol: NEC
+address: 04 00 00 00
+command: 00 00 00 00
+#
+name: Ch_prev
+type: parsed
+protocol: NEC
+address: 04 00 00 00
+command: 01 00 00 00
+#
+name: Input
+type: parsed
+protocol: NEC
+address: 04 00 00 00
+command: 0B 00 00 00

@@ -1,0 +1,61 @@
+Filetype: IR signals file
+Version: 1
+# Brand: Samsung
+# Models: Consumer and commercial TVs using the Samsung32 code set (address 07)
+# Source: Samsung's published NEC-style codes (E0E0xxxx), decoded to Flipper's Samsung32 form
+# Tested: no
+# Notes: Power_on and Power_off are discrete codes; commercial displays may also need RS-232 or MDC for remote lockout.
+#
+name: Power
+type: parsed
+protocol: Samsung32
+address: 07 00 00 00
+command: 02 00 00 00
+#
+name: Power_on
+type: parsed
+protocol: Samsung32
+address: 07 00 00 00
+command: 99 00 00 00
+#
+name: Power_off
+type: parsed
+protocol: Samsung32
+address: 07 00 00 00
+command: 98 00 00 00
+#
+name: Vol_up
+type: parsed
+protocol: Samsung32
+address: 07 00 00 00
+command: 07 00 00 00
+#
+name: Vol_dn
+type: parsed
+protocol: Samsung32
+address: 07 00 00 00
+command: 0B 00 00 00
+#
+name: Mute
+type: parsed
+protocol: Samsung32
+address: 07 00 00 00
+command: 0F 00 00 00
+#
+name: Ch_next
+type: parsed
+protocol: Samsung32
+address: 07 00 00 00
+command: 12 00 00 00
+#
+name: Ch_prev
+type: parsed
+protocol: Samsung32
+address: 07 00 00 00
+command: 10 00 00 00
+#
+name: Input
+type: parsed
+protocol: Samsung32
+address: 07 00 00 00
+command: 01 00 00 00

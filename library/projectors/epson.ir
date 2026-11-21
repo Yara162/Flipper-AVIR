@@ -1,0 +1,13 @@
+Filetype: IR signals file
+Version: 1
+# Brand: Epson
+# Models: Most Epson projectors (PowerLite, Pro, Home Cinema) on remote ID 0
+# Source: Epson projector NEC code set (address 0x5583), as used by Flipper's universal projector remote
+# Tested: no
+# Notes: Power off asks for confirmation: send Power twice, a second or two apart.
+#
+name: Power
+type: parsed
+protocol: NECext
+address: 83 55 00 00
+command: 90 6F 00 00

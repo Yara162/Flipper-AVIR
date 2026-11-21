@@ -1,0 +1,61 @@
+Filetype: IR signals file
+Version: 1
+# Brand: Sony
+# Models: Bravia TVs and Sony professional displays using SIRC device 1
+# Source: Sony SIRC 12-bit TV command table
+# Tested: no
+# Notes: Power_on and Power_off are discrete codes. Sony remotes repeat each code at least 3 times; Flipper does this itself.
+#
+name: Power
+type: parsed
+protocol: SIRC
+address: 01 00 00 00
+command: 15 00 00 00
+#
+name: Power_on
+type: parsed
+protocol: SIRC
+address: 01 00 00 00
+command: 2E 00 00 00
+#
+name: Power_off
+type: parsed
+protocol: SIRC
+address: 01 00 00 00
+command: 2F 00 00 00
+#
+name: Vol_up
+type: parsed
+protocol: SIRC
+address: 01 00 00 00
+command: 12 00 00 00
+#
+name: Vol_dn
+type: parsed
+protocol: SIRC
+address: 01 00 00 00
+command: 13 00 00 00
+#
+name: Mute
+type: parsed
+protocol: SIRC
+address: 01 00 00 00
+command: 14 00 00 00
+#
+name: Ch_next
+type: parsed
+protocol: SIRC
+address: 01 00 00 00
+command: 10 00 00 00
+#
+name: Ch_prev
+type: parsed
+protocol: SIRC
+address: 01 00 00 00
+command: 11 00 00 00
+#
+name: Input
+type: parsed
+protocol: SIRC
+address: 01 00 00 00
+command: 25 00 00 00
